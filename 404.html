@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f3f3ef" />
+  <meta name="description" content="ENHYPEN 신규 팬을 위한 팬 큐레이션 콘텐츠 허브. 멤버, 퍼포먼스, 예능, 음악을 한곳에서 찾아보세요." />
+  <meta property="og:title" content="ENHYPEN, WHERE TO START?" />
+  <meta property="og:description" content="흩어진 ENHYPEN 추천 콘텐츠를 한곳에서. 팬들의 CONTENT POINT와 함께 찾아보세요." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <title>ENHYPEN, WHERE TO START?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="ENHYPEN home">ENHYPEN</a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#member">MEMBER</a>
+      <a href="#stage">STAGE</a>
+      <a href="#variety">VARIETY</a>
+      <a href="#music">MUSIC</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <span class="micro-label dark">FAN CURATION · DAY ONE</span>
+        <p class="coords">+ 37.5119 / + 127.0598</p>
+        <h1>ENHYPEN,<br><em>WHERE TO START?</em></h1>
+        <p class="hero-desc">보고 싶은 엔하이픈을 선택하세요. 흩어져 있던 추천 콘텐츠를 한곳에서 다시 찾고, 팬들이 발견한 포인트까지 함께 이어서 볼 수 있어요.</p>
+        <div class="hero-actions">
+          <a class="pill primary" href="#routes">START HERE</a>
+          <a class="pill ghost" href="#shorts">팬 추천 보기</a>
+        </div>
+      </div>
+      <div class="sign-map" aria-hidden="true">
+        <div class="route-sign s-member">MEMBER →</div>
+        <div class="route-sign s-stage">← STAGE</div>
+        <div class="route-sign s-variety">VARIETY →</div>
+        <div class="route-sign s-music">← MUSIC</div>
+        <span class="dotted-arrow">↗</span>
+      </div>
+    </section>
+
+    <section id="routes" class="section shell route-section">
+      <div class="rule-heading"><span>↓ SELECT A ROUTE</span><i></i></div>
+      <div class="route-grid">
+        <a class="route-card" href="#member"><b>01</b><span class="route-icon">♙</span><strong>MEMBER</strong><small>당신의 최애 찾기</small><footer>OPEN <span>→</span></footer></a>
+        <a class="route-card" href="#stage"><b>02</b><span class="route-icon">↯</span><strong>STAGE</strong><small>무대로 시작하기</small><footer>OPEN <span>→</span></footer></a>
+        <a class="route-card" href="#variety"><b>03</b><span class="route-icon">▣</span><strong>VARIETY</strong><small>예능으로 입덕하기</small><footer>OPEN <span>→</span></footer></a>
+        <a class="route-card" href="#music"><b>04</b><span class="route-icon">♫</span><strong>MUSIC</strong><small>노래로 깊어지기</small><footer>OPEN <span>→</span></footer></a>
+      </div>
+    </section>
+
+    <section id="shorts" class="section shell shorts-section">
+      <div class="rule-heading"><span>START HERE: SHORTS</span><i></i></div>
+      <div class="section-title-row">
+        <div>
+          <h2>숏폼부터 다시 찾아보세요</h2>
+          <p>처음 관심을 끌었던 그 영상부터. 팬들이 발견한 포인트도 같이 확인해보세요.</p>
+        </div>
+        <button class="add-content-btn" data-add-section="shorts">＋ 나도 숏폼 추천하기</button>
+      </div>
+      <div id="shortsGrid" class="shorts-grid"></div>
+      <div id="shortsFanPicks" class="fan-picks"></div>
+    </section>
+
+    <section id="member" class="section band">
+      <div class="shell">
+        <div class="rule-heading numbered"><span><b>01</b> MEMBER</span><i></i></div>
+        <div class="section-title-row">
+          <div>
+            <h2>당신의 최애를 찾아서</h2>
+            <p>사진을 눌러 멤버의 성격 포인트와 MUST WATCH를 확인해보세요.</p>
+          </div>
+        </div>
+        <div id="memberGrid" class="member-grid"></div>
+      </div>
+    </section>
+
+    <section id="stage" class="section shell">
+      <div class="rule-heading numbered"><span><b>02</b> STAGE</span><i></i></div>
+      <div class="section-title-row stage-header">
+        <div>
+          <h2>퍼포먼스 맛집, 어디로 갈래?</h2>
+          <p>다크·몽환부터 청량·에너지까지, 지금 끌리는 무드로 골라보세요.</p>
+        </div>
+        <button class="add-content-btn" data-add-section="stage">＋ 나도 무대 추천하기</button>
+      </div>
+      <div class="filter-row" data-filter-target="stageGrid">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="dark">DARK & DREAMY</button>
+        <button class="filter" data-filter="bright">BRIGHT & ENERGY</button>
+      </div>
+      <div id="stageGrid" class="content-grid stage-grid"></div>
+      <button id="stageMore" class="view-more">VIEW MORE ↓</button>
+      <div id="stageFanPicks" class="fan-picks"></div>
+    </section>
+
+    <section id="variety" class="section band">
+      <div class="shell">
+        <div class="rule-heading numbered"><span><b>03</b> VARIETY</span><i></i></div>
+        <div class="section-title-row">
+          <div>
+            <h2>예능 맛집, 어디로 갈래?</h2>
+            <p>자컨, 외부 예능, 위버스 라이브까지. 멤버들의 현실 케미를 따라가보세요.</p>
+          </div>
+          <button class="add-content-btn" data-add-section="variety">＋ 나도 예능 추천하기</button>
+        </div>
+        <div class="filter-row" data-filter-target="varietyGrid">
+          <button class="filter active" data-filter="all">ALL</button>
+          <button class="filter" data-filter="self">SELF CONTENT</button>
+          <button class="filter" data-filter="external">EXTERNAL</button>
+          <button class="filter" data-filter="live">WEVERSE LIVE</button>
+        </div>
+        <div id="varietyGrid" class="content-grid variety-grid"></div>
+        <button id="varietyMore" class="view-more">VIEW MORE ↓</button>
+        <div id="varietyFanPicks" class="fan-picks"></div>
+      </div>
+    </section>
+
+    <section id="music" class="section shell music-section">
+      <div class="rule-heading numbered"><span><b>04</b> MUSIC</span><i></i></div>
+      <h2>세계관은 수록곡으로 먼저 들어보기</h2>
+      <div class="music-card">
+        <div class="music-copy">
+          <span class="micro-label outline">B-SIDE STORY</span>
+          <h3>엔하이픈 과몰입러가 만든 사랑 이야기</h3>
+          <p>세계관 흐름에 맞는 수록곡을 따라 듣는 로드맵형 플레이리스트.</p>
+          <button class="pill ghost disabled" type="button">PLAYLIST · COMING SOON</button>
+        </div>
+        <div class="poster-placeholder"><span>◉</span><small>POSTER</small></div>
+      </div>
+    </section>
+
+    <section class="squeeze-band">
+      <div class="shell squeeze-inner">
+        <div>
+          <span class="micro-label red-outline">SPECIAL EXPERIENCE</span>
+          <h2>SQUEEZE YOUR ENHYPEN</h2>
+          <p>엔하이픈 말랑이 가챠 콘텐츠를 직접 만져보세요.</p>
+        </div>
+        <a class="pill primary play" href="https://vm-squeeze-your-enhypen.vusercontent.net" target="_blank" rel="noopener">▶ PLAY NOW</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div class="footer-mark">ENHYPEN<br>WHERE TO START?</div>
+    <div class="footer-links">
+      <span>OFFICIAL YOUTUBE</span>
+      <span>WEVERSE</span>
+      <span>INSTAGRAM</span>
+      <span>X</span>
+      <span>TIKTOK</span>
+    </div>
+    <p class="prototype-note">│ Fan curation content prototype</p>
+  </footer>
+
+  <dialog id="memberDialog" class="modal member-modal">
+    <button class="modal-close" data-close-dialog aria-label="닫기">×</button>
+    <div id="memberDialogBody"></div>
+  </dialog>
+
+  <dialog id="submitDialog" class="modal submit-modal">
+    <button class="modal-close" data-close-dialog aria-label="닫기">×</button>
+    <form id="submitForm" method="dialog">
+      <span class="micro-label outline">FAN CURATION</span>
+      <h2>나도 콘텐츠 추천하기</h2>
+      <p class="form-intro">내가 발견한 입덕 포인트를 다른 팬에게 알려주세요.</p>
+
+      <div class="form-grid">
+        <label>추천 구역
+          <select name="section" required>
+            <option value="shorts">SHORTS</option>
+            <option value="stage">STAGE</option>
+            <option value="variety">VARIETY</option>
+          </select>
+        </label>
+        <label>플랫폼
+          <select name="platform" required>
+            <option>YouTube</option><option>Shorts</option><option>Weverse</option><option>Instagram</option><option>TikTok</option><option>Other</option>
+          </select>
+        </label>
+        <label class="span-2">URL
+          <input name="url" type="url" placeholder="https://..." required />
+        </label>
+        <label class="span-2">콘텐츠 제목
+          <input name="title" maxlength="100" required placeholder="추천할 콘텐츠 제목" />
+        </label>
+        <label class="span-2">CONTENT POINT <small><span id="pointCount">0</span>/80</small>
+          <textarea name="point" maxlength="80" required placeholder="예: 02:15 제이 표정 변화 꼭 봐주세요!"></textarea>
+        </label>
+        <label>TIMESTAMP
+          <input name="timestamp" placeholder="02:15" pattern="^(\d{1,2}:)?\d{1,2}:\d{2}$|^\d{1,2}:\d{2}$" />
+        </label>
+        <label>닉네임
+          <input name="nickname" maxlength="24" placeholder="ANONYMOUS" />
+        </label>
+        <label class="span-2">썸네일 이미지 <small>선택 · 1MB 이하</small>
+          <input name="image" type="file" accept="image/*" />
+        </label>
+      </div>
+
+      <label class="consent"><input type="checkbox" name="consent" required /> 공개 링크와 추천 문구가 FAN PICKS에 표시되는 것에 동의합니다.</label>
+      <div class="form-actions">
+        <button type="button" class="pill ghost" data-close-dialog>CANCEL</button>
+        <button type="submit" class="pill primary">ADD TO FAN PICKS →</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">FAN PICKS에 추가했어요.</div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "ENHYPEN, WHERE TO START?",
+  "short_name": "WHERE TO START?",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f3ef",
+  "theme_color": "#e31b18",
+  "lang": "ko-KR"
+}
